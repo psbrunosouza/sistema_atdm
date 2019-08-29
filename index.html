@@ -3,194 +3,210 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>ATDM</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Sistema de atendimento</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
   </head>
   <body>
-    <!-- CONTEUDO -->
-    <div id="container" class="container">
-      <!-- ESPAÇAMENTO SUPERIOR -->
+    <!-- START-CONTEUDO -->
+    <div id="container" class="container-fluid">
       <div class="p-5"></div>
 
-      <!-- TABELAS: CONFIRMAÇÕES -->
+      <!-- START - ACORDION -->
+      <!-- START - CARD HEADER -->
       <div class="tab accordion" id="accordionExample">
-        <!--<div class="tab_header bg-light">
-          <a class="name_cart text-dark">Comarca de Salvador</a>
-        </div>-->
+      <div class="card-header tab_header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link name_cart text-dark" type="button" data-toggle="collapse"
+            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Comarca de Salvador
+          </button>
+        </h2>
+      </div>
+      <!-- END - CARD HEADER -->
 
-        <div class="card-header tab_header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link name_cart text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              Comarca de Salvador
-            </button>
-          </h2>
-        </div>
-        <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="tab_body table-responsive">
-            <table border="1px" class="table table-bordered table-sm">
-              <thead class="thead-light">
-                <tr>
-                  <th colspan="6">Confirmações não Enviadas pelo Cartório</th>
-                </tr>
-                <tr>
-                  <th scope="col">Data da Remessa</th>
-                  <th scope="col">Apresentante</th>
-                  <th scope="col">Código</th>
-                  <th scope="col">IBGE</th>
-                  <th scope="col">Remessa</th>
-                  <th scope="col">Dias</th>
-                </tr>
-              </thead>
+      <!-- START - CARD CONTENT -->
+      <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <!-- START - TABELAS: CONFIRMAÇÕES -->
+        <div class="tab_body table-responsive">
+          <table border="1px" class="table table-bordered table-sm">
+            <thead class="thead-light">
+              <tr>
+                <th colspan="6">&nbsp; <em>CONFIRMAÇÃO:</em> &nbsp; não Enviadas pelo Cartório</th>
+              </tr>
+              <tr>
+                <th scope="col">Apresentante</th>
+                <th scope="col">Remessa</th>
+                <th scope="col">Data da Remessa</th>
+                <th scope="col">IBGE</th>
+                <th scope="col">Dias em atraso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>COELBA</td>
+                <td>B9001408.191</td>
+                <td>14/08/2019</td>
+                <td>2904902</td>
+                <td>13</td>
+              </tr>
 
-              <tbody>
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
+              <tr>
+                <td>COELBA</td>
+                <td>B9001408.191</td>
+                <td>14/08/2019</td>
+                <td>2904902</td>
+                <td>13</td>
+              </tr>
 
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
+              <tr>
+                <td>COELBA</td>
+                <td>B9001408.191</td>
+                <td>14/08/2019</td>
+                <td>2904902</td>
+                <td>13</td>
+              </tr>
 
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
+              <tr>
+                <td>COELBA</td>
+                <td>B9001408.191</td>
+                <td>14/08/2019</td>
+                <td>2904902</td>
+                <td>13</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- END - TABELAS: CONFIRMAÇÕES -->
 
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-              </tbody>
-            </table>
+          <!-- START - TABELAS: RETORNOS -->
+          <table border="1px" class="table table-bordered table-sm">
+            <thead class="thead-light">
+              <tr>
+                <th colspan="7">&nbsp; <em>RETORNOS:</em> &nbsp; não solucionados pelo cartório</th>
+              </tr>
+              <tr>
+                <th scope="col">Portador</th>
+                <th scope="col">Nosso Numero</th>
+                <th scope="col">Conta contrato</th>
+                <th scope="col">Protocolo</th>
+                <th scope="col">Data Protocolo</th>
+                <th scope="col">Data Confirmação</th>
+                <th scope="col">Dias em atraso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>COELBA</td>
+                <td>47323</td>
+                <td>0230047323</td>
+                <td>03345</td>
+                <td>26/03/2019</td>
+                <td>29/03/2019</td>
+                <td>13</td>
+              </tr>
 
-            <!-- TABELAS: RETORNOS -->
-            <table border="1px" class="table table-bordered table-sm">
-              <thead class="thead-light">
-                <tr>
-                  <th colspan="6">Retornos não solucionados pelo cartório</th>
-                </tr>
-                <tr>
-                  <th>Data da Remessa</th>
-                  <th>Apresentante</th>
-                  <th>Código</th>
-                  <th>IBGE</th>
-                  <th>Remessa</th>
-                  <th>Dias</th>
-                </tr>
-              </thead>
-                <tbody>
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
+              <tr>
+                <td>COELBA</td>
+                <td>47323</td>
+                <td>0230047323</td>
+                <td>03345</td>
+                <td>26/03/2019</td>
+                <td>29/03/2019</td>
+                <td>13</td>
+              </tr>
 
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
+              <tr>
+                <td>COELBA</td>
+                <td>47323</td>
+                <td>0230047323</td>
+                <td>03345</td>
+                <td>26/03/2019</td>
+                <td>29/03/2019</td>
+                <td>13</td>
+              </tr>
 
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
+              <tr>
+                <td>COELBA</td>
+                <td>47323</td>
+                <td>0230047323</td>
+                <td>03345</td>
+                <td>26/03/2019</td>
+                <td>29/03/2019</td>
+                <td>13</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- END - TABELAS: RETORNOS -->
 
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-              </tbody>
-            </table>
+          <!-- START - TABELAS: DAJES -->
+          <table border="1px" class="table table-bordered table-sm">
+            <thead class="thead-light">
+              <tr>
+                <th colspan="8">&nbsp; <em>DAJE's:</em> &nbsp; não anexados pelo cartório</th>
+              </tr>
+              <tr>
+                <th scope="col">Portador</th>
+                <th scope="col">Arquivo</th>
+                <th scope="col">Data Arquivo</th>
+                <th scope="col">Protocolo</th>
+                <th scope="col">Data Protocolo</th>
+                <th scope="col">Documento	Devedor</th>
+                <th scope="col">Valor Título</th>
+                <th scope="col">Dias em atraso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>COELBA</td>
+                <td>AC9000208.191</td>
+                <td>02/08/2019</td>
+                <td>2904902</td>
+                <td>15/07/2019</td>
+                <td>000.000.000.00</td>
+                <td>345,00</td>
+                <td>15</td>
+              </tr>
 
-            <!-- TABELAS: DAJES -->
-            <table border="1px" class="table table-bordered table-sm">
-              <thead class="thead-light">
-                <tr>
-                  <th colspan="6">DAJE's não anexados pelo cartório</th>
-                </tr>
-                <tr>
-                  <th>Data da Remessa</th>
-                  <th>Apresentante</th>
-                  <th>Código</th>
-                  <th>IBGE</th>
-                  <th>Remessa</th>
-                  <th>Dias</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
+              <tr>
+                <td>COELBA</td>
+                <td>AC9000208.191</td>
+                <td>02/08/2019</td>
+                <td>2904902</td>
+                <td>15/07/2019</td>
+                <td>000.000.000.00</td>
+                <td>345,00</td>
+                <td>15</td>
+              </tr>
 
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
+              <tr>
+                <td>COELBA</td>
+                <td>AC9000208.191</td>
+                <td>02/08/2019</td>
+                <td>2904902</td>
+                <td>15/07/2019</td>
+                <td>000.000.000.00</td>
+                <td>345,00</td>
+                <td>15</td>
+              </tr>
 
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-              <tbody>
-            </table>
+              <tr>
+                <td>COELBA</td>
+                <td>AC9000208.191</td>
+                <td>02/08/2019</td>
+                <td>2904902</td>
+                <td>15/07/2019</td>
+                <td>000.000.000.00</td>
+                <td>345,00</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- END - TABELAS: DAJES -->
           </div>
-        <div class="tab_footer bg-light">
+
+          <!-- START - TABLE FOOTER -->
+          <div class="tab_footer bg-light">
             <i class="icon-color fas fa-pencil-alt" data-toggle="modal" data-target="#mModal_2"></i>
             <i class="icon-color far fa-file-alt" data-toggle="modal" data-target="#mModal_1"></i>
             <i class="icon-color far fa-file-pdf"></i>
@@ -201,391 +217,32 @@
               <input type="submit" class="btn btn-danger"></submit>
             </form>
           </div>
+          <!-- END - TABLE FOOTER -->
+
         </div>
-
-
-        <div class="card-header tab_header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link name_cart text-dark" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Comarca de Camaçari
-            </button>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="tab_body table-responsive">
-            <table border="1px" class="table table-bordered table-sm">
-              <thead class="thead-light">
-                <tr>
-                  <th colspan="6">Confirmações não Enviadas pelo Cartório</th>
-                </tr>
-                <tr>
-                  <th scope="col">Data da Remessa</th>
-                  <th scope="col">Apresentante</th>
-                  <th scope="col">Código</th>
-                  <th scope="col">IBGE</th>
-                  <th scope="col">Remessa</th>
-                  <th scope="col">Dias</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- TABELAS: RETORNOS -->
-            <table border="1px" class="table table-bordered table-sm">
-              <thead class="thead-light">
-                <tr>
-                  <th colspan="6">Retornos não solucionados pelo cartório</th>
-                </tr>
-                <tr>
-                  <th>Data da Remessa</th>
-                  <th>Apresentante</th>
-                  <th>Código</th>
-                  <th>IBGE</th>
-                  <th>Remessa</th>
-                  <th>Dias</th>
-                </tr>
-              </thead>
-                <tbody>
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- TABELAS: DAJES -->
-            <table border="1px" class="table table-bordered table-sm">
-              <thead class="thead-light">
-                <tr>
-                  <th colspan="6">DAJE's não anexados pelo cartório</th>
-                </tr>
-                <tr>
-                  <th>Data da Remessa</th>
-                  <th>Apresentante</th>
-                  <th>Código</th>
-                  <th>IBGE</th>
-                  <th>Remessa</th>
-                  <th>Dias</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-              <tbody>
-            </table>
-          </div>
-        <div class="tab_footer bg-light">
-            <i class="icon-color fas fa-pencil-alt" data-toggle="modal" data-target="#mModal_2"></i>
-            <i class="icon-color far fa-file-alt" data-toggle="modal" data-target="#mModal_1"></i>
-            <i class="icon-color far fa-file-pdf"></i>
-            <form class="form-inline">
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@cartorio.com">
-              </div>
-              <input type="submit" class="btn btn-danger"></submit>
-            </form>
-          </div>
-        </div>
-
-        <div class="card-header tab_header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link name_cart text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Comarca de Feira de Satana
-            </button>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="tab_body table-responsive">
-            <table border="1px" class="table table-bordered table-sm">
-              <thead class="thead-light">
-                <tr>
-                  <th colspan="6">Confirmações não Enviadas pelo Cartório</th>
-                </tr>
-                <tr>
-                  <th scope="col">Data da Remessa</th>
-                  <th scope="col">Apresentante</th>
-                  <th scope="col">Código</th>
-                  <th scope="col">IBGE</th>
-                  <th scope="col">Remessa</th>
-                  <th scope="col">Dias</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- TABELAS: RETORNOS -->
-            <table border="1px" class="table table-bordered table-sm">
-              <thead class="thead-light">
-                <tr>
-                  <th colspan="6">Retornos não solucionados pelo cartório</th>
-                </tr>
-                <tr>
-                  <th>Data da Remessa</th>
-                  <th>Apresentante</th>
-                  <th>Código</th>
-                  <th>IBGE</th>
-                  <th>Remessa</th>
-                  <th>Dias</th>
-                </tr>
-              </thead>
-                <tbody>
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- TABELAS: DAJES -->
-            <table border="1px" class="table table-bordered table-sm">
-              <thead class="thead-light">
-                <tr>
-                  <th colspan="6">DAJE's não anexados pelo cartório</th>
-                </tr>
-                <tr>
-                  <th>Data da Remessa</th>
-                  <th>Apresentante</th>
-                  <th>Código</th>
-                  <th>IBGE</th>
-                  <th>Remessa</th>
-                  <th>Dias</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-
-                <tr>
-                  <td>14/08/2019</td>
-                  <td>COELBA</td>
-                  <td>1</td>
-                  <td>2904902</td>
-                  <td>B9001408.191</td>
-                  <td>13</td>
-                </tr>
-              <tbody>
-            </table>
-          </div>
-        <div class="tab_footer bg-light">
-            <i class="icon-color fas fa-pencil-alt" data-toggle="modal" data-target="#mModal_2"></i>
-            <i class="icon-color far fa-file-alt" data-toggle="modal" data-target="#mModal_1"></i>
-            <i class="icon-color far fa-file-pdf"></i>
-            <form class="form-inline">
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@cartorio.com">
-              </div>
-              <input type="submit" class="btn btn-danger"></submit>
-            </form>
-          </div>
-        </div>
+        <!-- END - CARD CONTENT -->
 
       </div>
+      <!-- END - ACORDION -->
+
     </div>
+    <!-- END-CONTEUDO -->
+
   </body>
+
   <footer>
-    <!-- MODAL 1 -->
-    <div class="modal fade" id="mModal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- MODAL CADASTRO DE ATENDIMENTO -->
+    <div class="modal fade" id="mModal_1" tabindex="-1" role="dialog" aria-labelledby="modalAtendimento" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Registros de atendimento</h5>
-            <button type="button" class="close" data-dismiss="modal2" aria-label="Close">
+            <h5 class="modal-title" id="modalAtendimento">Registros de atendimento</h5>
+            <button type="button" class="close" data-dismiss="mModal_1" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+
+          <!-- START - MODAL BODY -->
           <div class="modal-body">
             <div class="card mb-3" style="max-width: 540px;">
               <div class="row no-gutters">
@@ -635,26 +292,31 @@
               </div>
             </div>
           </div>
+          <!-- END - MODAL BODY -->
 
+          <!-- START - MODAL FOOTER -->
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
             <button type="button" class="btn btn-primary">Salvar</button>
           </div>
+          <!-- END - MODAL FOOTER -->
         </div>
       </div>
     </div>
 
-    <!-- MODAL 1 -->
-      <div class="modal fade" id="mModal_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Novo atendimento</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
+    <!-- MODAL REGISTROS DE ATENDIMENTO -->
+    <div class="modal fade" id="mModal_2" tabindex="-1" role="dialog" aria-labelledby="modalRegistro" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <!-- START - MODAL CONTEUDO -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalRegistro">Novo atendimento</h5>
+            <button type="button" class="close" data-dismiss="mModal_2" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- START - MODAL BODY -->
+          <div class="modal-body">
               <form>
                 <div class="form-group">
                   <label for="recipient-name" class="col-form-label">Atendente:</label>
@@ -685,17 +347,23 @@
                 </div>
               </form>
             </div>
+            <!-- END - MODAL BODY -->
+
+            <!-- START - MODAL FOOTER -->
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
               <button type="button" class="btn btn-primary">Salvar</button>
             </div>
+            <!-- END - MODAL FOOTER -->
           </div>
+          <!-- END - MODAL CONTEUDO -->
+
         </div>
       </div>
 
     <script src="https://kit.fontawesome.com/396d03f51e.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </footer>
 </html>
