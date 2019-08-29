@@ -14,10 +14,27 @@
       <div class="p-5"></div>
 
       <!-- START - PESQUISA -->
-      <form class="">
+      <form>
         <div class="form-group form-inline d-flex justify-content-center">
-          <input type="text" class="form-control" placeholder="Buscar...">
-          <button type="submit" class="btn btn-primary">Pesquisar</button>
+          <div class="d-flex justify-content-center">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="portador_campo">Portador</span>
+            </div>
+            <select class="col-sm-8 custom-select">
+              <option selected>Escolher...</option>
+              <option>900 - Coelba</option>
+              <option>900 - Coelba</option>
+              <option>900 - Coelba</option>
+              <option>900 - Coelba</option>
+              <option>900 - Coelba</option>
+              <option>900 - Coelba</option>
+              <option>900 - Coelba</option>
+              <option>900 - Coelba</option>
+              <option>900 - Coelba</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
+          </div>
         </div>
       </form>
       <!-- END - PESQUISA -->
@@ -230,15 +247,20 @@
           </div>
 
           <!-- START - TABLE FOOTER -->
-          <div class="tab_footer bg-light">
+          <div class="bg-light d-flex justify-content-center">
             <i class="icon-color fas fa-pencil-alt" data-toggle="modal" data-target="#mModal_2"></i>
             <i class="icon-color far fa-file-alt" data-toggle="modal" data-target="#mModal_1"></i>
             <i class="icon-color far fa-file-pdf"></i>
+            <div></div>
             <form class="form-inline">
               <div class="form-group">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@cartorio.com">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="email_campo">@</span>
+                </div>
+                <input type="email" class="form-control" id="emailControl" placeholder="email@cartorio.com">
+                <input type="submit" class="btn btn-danger"></submit>
+
               </div>
-              <input type="submit" class="btn btn-danger"></submit>
             </form>
           </div>
           <!-- END - TABLE FOOTER -->
@@ -342,33 +364,38 @@
           <!-- START - MODAL BODY -->
           <div class="modal-body">
               <form>
-                <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">Atendente:</label>
-                  <input type="text" class="form-control" id="recipient-name">
+
+                <div class="form-inline form-row">
+                  <div class="input-group-prepend col-2">
+                      <span class="input-group-text" id="campo_atendente">Atendente</span>
+                  </div>
+                  <input type="text" class="form-control col-10" id="atendente_nome">
                 </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Cartórios:</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Salvador</option>
-                    <option>Camaçari</option>
-                    <option>Feira de Santana</option>
-                    <option>Vitória da Conquista</option>
-                    <option>Juazeiro</option>
-                  </select>
+
+                <div class="form-row form-inline">
+                  <div class="input-group-prepend col-2">
+                      <span class="input-group-text" id="campo_cartorio">Cartório</span>
+                  </div>
+                  <input type="text" placeholder="Salvador" class="form-control col-10" id="cartorio_nome" readonly>
                 </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Tipo arquivo:</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
+
+                <div class="form-row form-inline">
+                  <div class="input-group-prepend col-2">
+                      <span class="input-group-text" id="campo_arquivo">Arquivo</span>
+                  </div>
+                  <select class="form-control col-10" id="tipo_arquivo">
                     <option>DAJE</option>
                     <option>REMESSA</option>
                     <option>RETORNO</option>
                     <option>CONFIRMAÇÃO</option>
                   </select>
                 </div>
+
                 <div class="form-group">
                   <label for="message-text" class="col-form-label">Atendimento:</label>
                   <textarea class="form-control" id="message-text"></textarea>
                 </div>
+
               </form>
             </div>
             <!-- END - MODAL BODY -->
