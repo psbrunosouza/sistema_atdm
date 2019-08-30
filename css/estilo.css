@@ -13,10 +13,14 @@
   padding: 15px;
 }
 
+.modal_estilo{
+  border: solid 1px #4C4C4C;
+}
+
 .tab_header{
 
   min-height: 40px;
-  border: solid 1px #dee2e6;
+  border: solid 1px #4C4C4C;
 }
 
 .tab_body{
@@ -35,11 +39,6 @@
 
 }
 
-.a{
-  border: 1px solid red;
-  width: 100%;
-}
-
 .name_cart{
   font-size: 20px;
   font-weight: bold;
@@ -47,7 +46,10 @@
 }
 
 .icon-color{
-  color: #DC3545;
+  color: black;
+  background-color: #007bff;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .modal-header{
