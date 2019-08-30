@@ -7,26 +7,35 @@
   height: 1200px;
 }
 
+.logo{
+  min-height: 120px;
+  padding: 15px;
+  border: 1px solid #BEBEBE;
+  border-radius: 5px;
+}
+
 .tab{
 
   min-height: 60px;
   padding: 15px;
+  border: 1px solid #BEBEBE;
+  border-radius: 5px;
 }
 
 .modal_estilo{
-  border: solid 1px #4C4C4C;
+  border: solid 1px #BEBEBE;
 }
 
 .tab_header{
 
   min-height: 40px;
-  border: solid 1px #4C4C4C;
+  border: solid 1px #BEBEBE;
 }
 
 .tab_body{
 
   min-height: 300px;
-  border: solid 1px #dee2e6;
+  border: solid 1px #BEBEBE;
 }
 
 .tab_footer{
@@ -35,7 +44,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid 1px #dee2e6;
+  border: solid 1px #BEBEBE;
 
 }
 
