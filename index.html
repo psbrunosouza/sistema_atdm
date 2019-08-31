@@ -29,20 +29,19 @@
             <input type="date" class="form-control" aria-describedby="data_campo">
           </div>
 
-            <div class="col input-group">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Options</label>
-              </div>
-              <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Selecionar...</option>
-                <option value="1">COELBA</option>
-                <option value="2">AMY</option>
-                <option value="3">PGE</option>
-              </select>
+          <div class="col input-group">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="portador_campo">Options</label>
             </div>
+            <select class="custom-select" id="portador_campo">
+              <option selected>Selecionar...</option>
+              <option value="1">COELBA</option>
+              <option value="2">AMY</option>
+              <option value="3">PGE</option>
+            </select>
+          </div>
 
-
-          <div class="btn-group col">
+          <div class="btn-group col-2">
             <button type="submit" class="btn btn-primary">Pesquisar</button>
           </div>
         </div>
@@ -273,21 +272,36 @@
           </div>
 
           <!-- START - TABLE FOOTER -->
-          <div class="bg-light d-flex justify-content-center">
-            <i class="icon-color fas fa-pencil-alt" data-toggle="modal" data-target="#mModal_2"></i>
-            <i class="icon-color far fa-file-alt" data-toggle="modal" data-target="#mModal_1"></i>
-            <i class="icon-color far fa-file-pdf"></i>
-            <div></div>
-            <form class="form-inline">
-              <div class="form-group">
+          <div class="p-3"></div>
+          <div class="col-12">
+            <div class="row justify-content-center align-items-center">
+
+              <button type="button" class="btn btn-primary col" data-toggle="modal" data-target="#mModal_2">
+                <i class="fas fa-pencil-alt"></i> Novo atendimento
+              </button>
+              
+              &nbsp;&nbsp;
+
+              <button type="button" class="btn btn-primary col" data-toggle="modal" data-target="#mModal_1">
+                <i class="far fa-file-alt"></i> Registros
+              </button>
+
+              &nbsp; &nbsp;
+
+              <button type="button" class="btn btn-primary col">
+                <i class="far fa-file-pdf"></i> PDF
+              </button>
+
+              <div class="col input-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="email_campo">@</span>
                 </div>
-                <input type="email" class="form-control" id="emailControl" placeholder="email@cartorio.com">
-                <input type="submit" class="btn btn-primary"></submit>
-
+                <input type="email" class="form-control" aria-describedby="email_campo" placeholder="email@cartorio.com.br">
               </div>
-            </form>
+
+              <button type="button" class="btn btn-primary col">Enviar</button>
+
+            </div>
           </div>
           <!-- END - TABLE FOOTER -->
 
