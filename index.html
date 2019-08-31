@@ -17,16 +17,42 @@
 
       </div>
       <!-- END - LOGO -->
-      <div class="p-2"></div>
 
       <!-- START - PESQUISA -->
-      <form>
+      <div class="p-2"></div>
+      <form class="col-6">
+        <div class="form-row justify-content-center align-items-center">
+          <div class="col input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="data_campo">Data</span>
+            </div>
+            <input type="date" class="form-control" aria-describedby="data_campo">
+          </div>
+
+            <div class="col input-group">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Options</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Selecionar...</option>
+                <option value="1">COELBA</option>
+                <option value="2">AMY</option>
+                <option value="3">PGE</option>
+              </select>
+            </div>
+
+
+          <div class="btn-group col">
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
+          </div>
+        </div>
 
       </form>
       <!-- END - PESQUISA -->
 
       <!-- START - ACORDION -->
       <!-- START - CARD HEADER -->
+      <div class="p-2"></div>
       <div class="tab accordion" id="accordionExample">
         <div class="card-header tab_header" id="headingOne">
           <h2 class="mb-0">
