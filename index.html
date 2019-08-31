@@ -53,7 +53,7 @@
       <!-- START - CARD HEADER -->
       <div class="p-2"></div>
       <div class="tab accordion" id="accordionExample">
-        <div class="card-header tab_header" id="headingOne">
+        <div class="card-header" id="headingOne">
           <h2 class="mb-0">
             <button class="btn btn-light text-dark" type="button" data-toggle="collapse"
               data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -80,12 +80,11 @@
       <!-- START - CARD CONTENT -->
       <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
         <!-- START - TABELAS: CONFIRMAÇÕES -->
-        <div class="tab_body table-responsive">
-          <table border="1px" class="table table-bordered table-sm">
-            <thead>
-              <tr>
-                <th colspan="7" class="bg-light">&nbsp; <em>CONFIRMAÇÃO:</em> &nbsp; não Enviadas pelo Cartório</th>
-              </tr>
+        <div class="tab_body table-responsive-lg">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <div class="p-2"></div>
+              <p>&nbsp; <strong><em>CONFIRMAÇÃO:</em></strong> &nbsp; não Enviadas pelo Cartório</p>
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Apresentante</th>
@@ -136,10 +135,10 @@
           <!-- END - TABELAS: CONFIRMAÇÕES -->
 
           <!-- START - TABELAS: RETORNOS -->
-          <table border="1px" class="table table-bordered table-sm">
-            <thead>
+          <table border="1px" class="table table-bordered">
+            <thead class="table-light">
               <tr>
-                <th colspan="8" class="bg-light">&nbsp; <em>RETORNOS:</em> &nbsp; não solucionados pelo cartório</th>
+                <th scope="col" colspan="8">&nbsp; <em>RETORNOS:</em> &nbsp; não solucionados pelo cartório</th>
               </tr>
               <tr>
                 <th scope="col">#</th>
@@ -201,10 +200,10 @@
           <!-- END - TABELAS: RETORNOS -->
 
           <!-- START - TABELAS: DAJES -->
-          <table border="1px" class="table table-bordered table-sm">
-            <thead>
+          <table border="1px" class="table table-bordered">
+            <thead class="table-light">
               <tr>
-                <th colspan="9" class="bg-light">&nbsp; <em>DAJE's:</em> &nbsp; não anexados pelo cartório</th>
+                <th scope="col" colspan="9">&nbsp; <em>DAJE's:</em> &nbsp; não anexados pelo cartório</th>
               </tr>
               <tr>
                 <th scope="col">#</th>
@@ -276,30 +275,21 @@
           <div class="col-12">
             <div class="row justify-content-center align-items-center">
 
-              <button type="button" class="btn btn-primary col" data-toggle="modal" data-target="#mModal_2">
+              <button type="button" class="btn btn-outline-primary col-2" data-toggle="modal" data-target="#mModal_2">
                 <i class="fas fa-pencil-alt"></i> Novo atendimento
               </button>
-              
-              &nbsp;&nbsp;
-
-              <button type="button" class="btn btn-primary col" data-toggle="modal" data-target="#mModal_1">
+              &nbsp;
+              <button type="button" class="btn btn-outline-primary col-2" data-toggle="modal" data-target="#mModal_1">
                 <i class="far fa-file-alt"></i> Registros
               </button>
-
-              &nbsp; &nbsp;
-
-              <button type="button" class="btn btn-primary col">
+              &nbsp;
+              <button type="button" class="btn btn-outline-primary col-2">
                 <i class="far fa-file-pdf"></i> PDF
               </button>
-
-              <div class="col input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="email_campo">@</span>
-                </div>
-                <input type="email" class="form-control" aria-describedby="email_campo" placeholder="email@cartorio.com.br">
-              </div>
-
-              <button type="button" class="btn btn-primary col">Enviar</button>
+              &nbsp;
+              <input type="email" class="form-control col-3" aria-describedby="email_campo" placeholder="email@cartorio.com.br">
+              &nbsp;
+              <button type="button" class="btn btn-outline-primary col-2">Enviar</button>
 
             </div>
           </div>
