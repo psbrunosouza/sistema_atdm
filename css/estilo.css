@@ -7,10 +7,6 @@
   height: 1200px;
 }
 
-.a{
-  border: 1px solid red;
-}
-
 .logo{
   min-height: 120px;
   padding: 15px;
@@ -39,7 +35,7 @@
 .tab_body{
 
   min-height: 300px;
-  
+
 }
 
 .tab_footer{
