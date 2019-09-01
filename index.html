@@ -65,11 +65,13 @@
               Confirmações <span class="badge badge-danger">4</span>
             </button>
 
-            <button type="button" class="btn btn-link text-dark">
+            <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
+              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               Retornos <span class="badge badge-danger">4</span>
             </button>
 
-            <button type="button" class="btn btn-link text-dark">
+            <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
+              data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               DAJE's <span class="badge badge-danger">4</span>
             </button>
             <!-- END - NOTIFICAÇÕES -->
@@ -289,7 +291,6 @@
               <input type="email" class="form-control col-3" aria-describedby="email_campo" placeholder="email@cartorio.com.br">
               &nbsp;
               <button type="button" class="btn btn-outline-primary col-2">Enviar</button>
-
             </div>
           </div>
           <!-- END - TABLE FOOTER -->
@@ -299,11 +300,11 @@
 
         <!-- START - COLAPSE ONLY CONFIRMAÇÕES -->
         <div id="collapseTwo" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <table border="1px" class="table table-bordered table-sm">
-              <thead>
-                <tr>
-                  <th colspan="7" class="bg-light">&nbsp; <em>CONFIRMAÇÃO:</em> &nbsp; não Enviadas pelo Cartório</th>
-                </tr>
+          <div class="tab_body table-responsive-lg">
+            <table class="table table-bordered">
+              <thead class="table-light">
+                <div class="p-2"></div>
+                <p class="text-danger">&nbsp; <strong><em>ARQUIVO: CONFIRMAÇÃO</em></strong> &nbsp; Não enviado(s) pelo cartório</p>
                 <tr>
                   <th scope="col">#</th>
                   <th scope="col">Apresentante</th>
@@ -352,25 +353,214 @@
               </tbody>
             </table>
 
-            <div class="bg-light d-flex justify-content-center">
-              <i class="icon-color fas fa-pencil-alt" data-toggle="modal" data-target="#mModal_2"></i>
-              <i class="icon-color far fa-file-alt" data-toggle="modal" data-target="#mModal_1"></i>
-              <i class="icon-color far fa-file-pdf"></i>
-              <div></div>
-              <form class="form-inline">
-                <div class="form-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="email_campo">@</span>
-                  </div>
-                  <input type="email" class="form-control" id="emailControl" placeholder="email@cartorio.com">
-                  <input type="submit" class="btn btn-primary"></submit>
+            <div class="p-3"></div>
+            <div class="col-12">
+              <div class="row justify-content-center align-items-center">
 
-                </div>
-              </form>
+                <button type="button" class="btn btn-outline-primary col-2" data-toggle="modal" data-target="#mModal_2">
+                  <i class="fas fa-pencil-alt"></i> Novo atendimento
+                </button>
+                &nbsp;
+                <button type="button" class="btn btn-outline-primary col-2" data-toggle="modal" data-target="#mModal_1">
+                  <i class="far fa-file-alt"></i> Registros
+                </button>
+                &nbsp;
+                <button type="button" class="btn btn-outline-primary col-2">
+                  <i class="far fa-file-pdf"></i> PDF
+                </button>
+                &nbsp;
+                <input type="email" class="form-control col-3" aria-describedby="email_campo" placeholder="email@cartorio.com.br">
+                &nbsp;
+                <button type="button" class="btn btn-outline-primary col-2">Enviar</button>
+              </div>
             </div>
         </div>
-        <!-- END - COLAPSE ONLY CONFIRMAÇÕES -->
       </div>
+      <!-- END - COLAPSE ONLY CONFIRMAÇÕES -->
+
+      <!-- START - COLAPSE ONLY RETORNOS -->
+        <div id="collapseThree" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="tab_body table-responsive-lg">
+            <table border="1px" class="table table-bordered">
+              <thead class="table-light">
+
+                <div class="p-2"></div>
+                <p class="text-danger">&nbsp; <strong><em>ARQUIVO: RETORNO</em></strong> &nbsp; Não enviado(s) pelo cartório</p>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Portador</th>
+                  <th scope="col">Nosso Numero</th>
+                  <th scope="col">Conta contrato</th>
+                  <th scope="col">Protocolo</th>
+                  <th scope="col">Data Protocolo</th>
+                  <th scope="col">Data Confirmação</th>
+                  <th scope="col">Dias em atraso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>COELBA</td>
+                  <td>47323</td>
+                  <td>0230047323</td>
+                  <td>03345</td>
+                  <td>26/03/2019</td>
+                  <td>29/03/2019</td>
+                  <td>13</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">2</th>
+                  <td>COELBA</td>
+                  <td>47323</td>
+                  <td>0230047323</td>
+                  <td>03345</td>
+                  <td>26/03/2019</td>
+                  <td>29/03/2019</td>
+                  <td>13</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">3</th>
+                  <td>COELBA</td>
+                  <td>47323</td>
+                  <td>0230047323</td>
+                  <td>03345</td>
+                  <td>26/03/2019</td>
+                  <td>29/03/2019</td>
+                  <td>13</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">4</th>
+                  <td>COELBA</td>
+                  <td>47323</td>
+                  <td>0230047323</td>
+                  <td>03345</td>
+                  <td>26/03/2019</td>
+                  <td>29/03/2019</td>
+                  <td>13</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="p-3"></div>
+            <div class="col-12">
+              <div class="row justify-content-center align-items-center">
+
+                <button type="button" class="btn btn-outline-primary col-2" data-toggle="modal" data-target="#mModal_2">
+                  <i class="fas fa-pencil-alt"></i> Novo atendimento
+                </button>
+                &nbsp;
+                <button type="button" class="btn btn-outline-primary col-2" data-toggle="modal" data-target="#mModal_1">
+                  <i class="far fa-file-alt"></i> Registros
+                </button>
+                &nbsp;
+                <button type="button" class="btn btn-outline-primary col-2">
+                  <i class="far fa-file-pdf"></i> PDF
+                </button>
+                &nbsp;
+                <input type="email" class="form-control col-3" aria-describedby="email_campo" placeholder="email@cartorio.com.br">
+                &nbsp;
+                <button type="button" class="btn btn-outline-primary col-2">Enviar</button>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- END - COLAPSE ONLY RETORNOS -->
+
+      <!-- START - COLAPSE ONLY DAJE -->
+      <div id="collapseFour" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="tab_body table-responsive-lg">
+            <table border="1px" class="table table-bordered">
+              <thead class="table-light">
+                <div class="p-2"></div>
+                <p class="text-danger">&nbsp; <strong><em>ARQUIVO: DAJE</em></strong> &nbsp; Não anexado(s) pelo cartório</p>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Portador</th>
+                  <th scope="col">Arquivo</th>
+                  <th scope="col">Data Arquivo</th>
+                  <th scope="col">Protocolo</th>
+                  <th scope="col">Data Protocolo</th>
+                  <th scope="col">Documento	Devedor</th>
+                  <th scope="col">Valor Título</th>
+                  <th scope="col">Dias em atraso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>COELBA</td>
+                  <td>AC9000208.191</td>
+                  <td>02/08/2019</td>
+                  <td>2904902</td>
+                  <td>15/07/2019</td>
+                  <td>000.000.000.00</td>
+                  <td>345,00</td>
+                  <td>15</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">2</th>
+                  <td>COELBA</td>
+                  <td>AC9000208.191</td>
+                  <td>02/08/2019</td>
+                  <td>2904902</td>
+                  <td>15/07/2019</td>
+                  <td>000.000.000.00</td>
+                  <td>345,00</td>
+                  <td>15</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">3</th>
+                  <td>COELBA</td>
+                  <td>AC9000208.191</td>
+                  <td>02/08/2019</td>
+                  <td>2904902</td>
+                  <td>15/07/2019</td>
+                  <td>000.000.000.00</td>
+                  <td>345,00</td>
+                  <td>15</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">4</th>
+                  <td>COELBA</td>
+                  <td>AC9000208.191</td>
+                  <td>02/08/2019</td>
+                  <td>2904902</td>
+                  <td>15/07/2019</td>
+                  <td>000.000.000.00</td>
+                  <td>345,00</td>
+                  <td>15</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="p-3"></div>
+            <div class="col-12">
+              <div class="row justify-content-center align-items-center">
+
+                <button type="button" class="btn btn-outline-primary col-2" data-toggle="modal" data-target="#mModal_2">
+                  <i class="fas fa-pencil-alt"></i> Novo atendimento
+                </button>
+                &nbsp;
+                <button type="button" class="btn btn-outline-primary col-2" data-toggle="modal" data-target="#mModal_1">
+                  <i class="far fa-file-alt"></i> Registros
+                </button>
+                &nbsp;
+                <button type="button" class="btn btn-outline-primary col-2">
+                  <i class="far fa-file-pdf"></i> PDF
+                </button>
+                &nbsp;
+                <input type="email" class="form-control col-3" aria-describedby="email_campo" placeholder="email@cartorio.com.br">
+                &nbsp;
+                <button type="button" class="btn btn-outline-primary col-2">Enviar</button>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- END - COLAPSE ONLY DAJE -->
       <div class="p-3"></div>
       <!-- END - ACORDION -->
     </div>
@@ -383,7 +573,7 @@
         <div class="modal-content modal_estilo">
           <div class="modal-header">
             <h5 class="modal-title" id="modalAtendimento">Registros de atendimento</h5>
-            <button type="button" class="close" data-dismiss="mModal_1" aria-label="Close">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -457,7 +647,7 @@
         <div class="modal-content modal_estilo">
           <div class="modal-header">
             <h5 class="modal-title" id="modalRegistro">Novo atendimento</h5>
-            <button type="button" class="close" data-dismiss="mModal_2" aria-label="Close">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
