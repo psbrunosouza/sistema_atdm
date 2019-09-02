@@ -49,10 +49,10 @@
       </form>
       <!-- END - PESQUISA -->
 
-      <!-- START - ACORDION -->
-      <!-- START - CARD HEADER -->
       <div class="p-2"></div>
+      <!-- START - ACORDION -->
       <div class="tab accordion" id="accordionExample">
+        <!-- START - CARD HEADER -->
         <div class="card-header" id="headingOne">
           <h2 class="mb-0">
             <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
@@ -284,9 +284,12 @@
                 <i class="far fa-file-alt"></i> Registros
               </button>
               &nbsp;
+
               <button type="button" class="btn btn-outline-primary col-2">
                 <i class="far fa-file-pdf"></i> PDF
+                <a href="pdfFile.html"></a>
               </button>
+
               &nbsp;
               <input type="email" class="form-control col-3" aria-describedby="email_campo" placeholder="email@cartorio.com.br">
               &nbsp;
@@ -562,10 +565,10 @@
       </div>
       <!-- END - COLAPSE ONLY DAJE -->
       <div class="p-3"></div>
-      <!-- END - ACORDION -->
     </div>
-    <!-- END-CONTEUDO -->
+    <!-- END - ACORDION -->
   </body>
+  <!-- END-CONTEUDO -->
   <footer>
     <!-- MODAL REGISTROS DE ATENDIMENTO -->
     <div class="modal fade" id="mModal_1" tabindex="-1" role="dialog" aria-labelledby="modalAtendimento" aria-hidden="true">
@@ -580,10 +583,22 @@
 
           <!-- START - MODAL BODY -->
           <div class="modal-body">
+
+            <!-- START - PESQUISAR ATENDIMENTO -->
+            <form>
+              <div class="form-group form-inline justify-content-center">
+                <input type="text" class="form-control" id="pesquisar_atendimento" placeholder="Buscar atendimento..."> &nbsp;&nbsp;
+                <button type="submit" class="btn btn-outline-primary" data-toggle="tooltip"
+                data-placement="bottom" title="Pesquise por, título ou protocolo do atendimento.">Pesquisar</button>
+              </div>
+            </form>
+            <!-- END - PESQUISAR ATENDIMENTO -->
+
             <!-- START - CARD EXEMPLO 1 -->
             <div class="card">
               <div class="card-header d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                 <h5 class="text-margin-adjust" >Salvador - 1</h5>
+                <p class="text-margin-adjust"><strong>Protocolo:</strong> 0001020919</p>
                 <p class="text-margin-adjust text-info">Atendente: xxxxxxx</p>
               </div>
               <div class="card-body" style="width: 100%;">
@@ -619,6 +634,7 @@
             <div class="card">
               <div class="card-header d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                 <h5 class="text-margin-adjust" >Salvador - 1</h5>
+                <p class="text-margin-adjust"><strong>Protocolo:</strong> 0002020919</p>
                 <p class="text-margin-adjust text-info">Atendente: xxxxxxx</p>
               </div>
               <div class="card-body" style="width: 100%;">
@@ -654,6 +670,7 @@
             <div class="card">
               <div class="card-header d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                 <h5 class="text-margin-adjust" >Salvador - 1</h5>
+                <p class="text-margin-adjust"><strong>Protocolo:</strong> 0003020919</p>
                 <p class="text-margin-adjust text-info">Atendente: xxxxxxx</p>
               </div>
               <div class="card-body" style="width: 100%;">
@@ -689,6 +706,7 @@
             <div class="card">
               <div class="card-header d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                 <h5 class="text-margin-adjust" >Salvador - 1</h5>
+                <p class="text-margin-adjust"><strong>Protocolo:</strong> 0004020919</p>
                 <p class="text-margin-adjust text-info">Atendente: xxxxxxx</p>
               </div>
               <div class="card-body" style="width: 100%;">
