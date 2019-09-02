@@ -745,45 +745,45 @@
           </div>
           <!-- START - MODAL BODY -->
           <div class="modal-body">
-            <form class="i">
-              <div class="form-group row">
-                <label for="staticAtendente" class="col-3 col-auto col-form-label">Atendente:</label>
-                <div class="i col-8">
-                  <input type="text" readonly class="form-control-plaintext" id="staticAtendente" value="Aria Stark">
-                </div>
-
-                <label for="staticCartorio" class="col-3 col-auto col-form-label">Cartório:</label>
-                <div class="i col-8">
-                  <input type="text" readonly class="form-control-plaintext" id="staticCartorio" value="Salvador - 1">
-                </div>
-
-                <label for="staticPortador" class="col-3 col-auto col-form-label">Portador:</label>
-                <div class="i col-8">
-                  <input type="text" readonly class="form-control-plaintext" id="staticPortador" value="900 - COELBA">
-                </div>
-
-                <label for="staticDtAtendimento" class="col-3 col-auto col-form-label">Data de atendimento:</label>
-                <div class="i col-8">
-                  <input type="text" readonly class="form-control-plaintext" id="staticDtAtendimento" value="15/08/2019 16:20">
-                </div>
+            <!-- START - CARD EXEMPLO 1 -->
+            <div class="card">
+              <div class="card-header d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
+                <h5 class="text-margin-adjust" >Salvador - 1</h5>
+                <p class="text-margin-adjust text-info">Atendente: xxxxxxx</p>
               </div>
-
-              <div class="form-group">
-                <select class="custom-select col-12">
-                  <option selected>Tipo de arquivo</option>
-                  <option value="1">REMESSA</option>
-                  <option value="2">RETORNO</option>
-                  <option value="3">CONFIRMAÇÃO</option>
-                  <option value="4">DAJE</option>
-                </select>
-                <div class="p-1"></div>
-                <div class="form-group">
-                 <textarea class="form-control" id="campo_registro_atdm" rows="3" placeholder="Registro de atendimento"></textarea>
+              <div class="card-body" style="width: 100%;">
+                <div class="d-flex justify-content-between align-items-center" style="width: 100%;">
+                  <input type="text" class="flex-grow-3 form-control" placeholder="Título do atendimento" />
+                  &nbsp;&nbsp;
+                  <select class="flex-grow-1 custom-select">
+                    <option selected>Status...</option>
+                    <option value="1">Concluído</option>
+                    <option value="2">Pendente</option>
+                    <option value="3">Chamado TI</option>
+                    <option value="4">Re-aberto</option>
+                  </select>
+                  &nbsp;&nbsp;
+                  <select class="flex-grow-1 custom-select">
+                    <option selected>Arquivo...</option>
+                    <option value="1">REMESSA</option>
+                    <option value="2">CONFIRMAÇÃO</option>
+                    <option value="3">RETORNO</option>
+                    <option value="4">DAJE</option>
+                    <option value="4">INSTRUMENTO</option>
+                  </select>
                 </div>
+                <div class="p-2"></div>
+                <form>
+                  <div class="form-group">
+                    <textarea rows="5" class="form-control" placeholder="Registrar atendimento..."></textarea>
+                  </div>
+                </form>
               </div>
-
-
-            </form>
+              <div class="card-footer text-muted text-right" style="width: 100%;">
+                Data do atendimento: 15/06/2019 - 12:49
+              </div>
+            </div>
+            <!-- END - CARD EXEMPLO 1 -->
           </div>
           <!-- END - MODAL BODY -->
 
