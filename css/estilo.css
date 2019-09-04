@@ -9,9 +9,12 @@
 
 .logo{
   min-height: 120px;
-  padding: 15px;
   border: 1px solid #BEBEBE;
   border-radius: 5px;
+}
+
+.font-size-tables th, .font-size-tables td{
+  font-size: 10px;
 }
 
 .tab{
