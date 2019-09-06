@@ -276,7 +276,7 @@
           <!-- END - TABELAS: DAJES -->
           </div>
 
-          
+
 
         </div>
         <!-- END - CARD CONTENT -->
@@ -485,25 +485,30 @@
     <!-- END - ACORDION -->
     <!-- START - TABLE FOOTER -->
     <div class="p-3"></div>
-    <div class="col-12">
-      <div class="row justify-content-center align-items-center">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="row">
+        <div class="btn-group">
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#mModal_2">
+            <i class="fas fa-pencil-alt"></i> Novo atendimento
+          </button>
 
-        <button type="button" class="btn btn-outline-primary col-2" data-toggle="modal" data-target="#mModal_2">
-          <i class="fas fa-pencil-alt"></i> Novo atendimento
-        </button>
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#mModal_1">
+            <i class="far fa-file-alt"></i> Registros
+          </button>
+
+          <a href="pdfFile.html" class="btn btn-outline-primary">
+            Relatório
+          </a>
+        </div>
+
         &nbsp;
-        <button type="button" class="btn btn-outline-primary col-2" data-toggle="modal" data-target="#mModal_1">
-          <i class="far fa-file-alt"></i> Registros
-        </button>
-        &nbsp;
-        <button type="button" class="btn btn-outline-primary col-2">
-          <i class="far fa-file-pdf"></i> PDF
-          <a href="pdfFile.html"></a>
-        </button>
-        &nbsp;
-        <input type="email" class="form-control col-3" aria-describedby="email_campo" placeholder="email@cartorio.com.br">
-        &nbsp;
-        <button type="button" class="btn btn-outline-primary col-2">Enviar</button>
+        <div class="form-input">
+          <input type="email" class="form-control" aria-describedby="email_campo" placeholder="email@cartorio.com.br">
+        </div>
+          &nbsp;
+        <div class="btn-group">
+          <button type="button" class="btn btn-outline-primary">Enviar</button>
+        </div>
       </div>
     </div>
     <!-- END - TABLE FOOTER -->

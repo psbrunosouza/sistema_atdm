@@ -7,6 +7,10 @@
   height: 1200px;
 }
 
+.a{
+  border: 1px solid red;
+}
+
 .logo{
   min-height: 120px;
   border: 1px solid #BEBEBE;
