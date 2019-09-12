@@ -642,23 +642,21 @@
                 <div class="p-1"></div>
 
                 <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
-                  <button class="btn btn-outline-primary text-margin-adjust"><i class="fas fa-plus"></i></button>
+                  <div class="row text-margin-adjust">
+                    <button class="btn btn-outline-primary text-margin-adjust"><i class="fas fa-plus"></i></button>
+                    &nbsp;
+                    <button class="btn btn-outline-primary text-margin-adjust"><i class="fas fa-paperclip"></i></button>
+                  </div>
                   <p id="status" class="text-margin-adjust"><strong>Pendente</strong></p>
                 </div>
 
                 <div class="p-1"></div>
 
                 <div class="group">
-                  <textarea rows="5" type="textarea" class="form-control" placeholder="Novo registro"></textarea>
-                   &nbsp; &nbsp;
+                  <textarea rows="5" type="textarea" class="form-control" placeholder="Comentário"></textarea>
                 </div>
 
-                <div class="input-group">
-                  <div class="custom-file">
-                    <label class="custom-file-label" for="inputGroupFile04"></label>
-                    <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
-                  </div>
-                </div>
+                <div class="p-1"></div>
 
                 <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                   <select id="selecaoStatus" onchange="selecinarStatus()" class="custom-select text-margin-adjust">
