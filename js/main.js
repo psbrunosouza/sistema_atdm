@@ -2,9 +2,10 @@ function selecinarStatus(){
       var selStatus = document.getElementById("selecaoStatus");
       var status = document.getElementById("status");
 
-      status.style.color = "#EB5E55";
-
       selStatus.addEventListener('change', function(){
+
+      event.stopPropagation();
+
       status.innerHTML = this.value;
 
       if(this.value == "Concluído"){
