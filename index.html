@@ -76,7 +76,7 @@
       <div class="tab accordion" id="accordionExample">
         <!-- START - CARD HEADER -->
         <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
+          <div class="d-flex">
             <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
               data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               Comarca de Salvador <span class="badge badge-danger">12</span>
@@ -97,7 +97,25 @@
               DAJE's <span class="badge badge-danger">4</span>
             </button>
             <!-- END - NOTIFICAÇÕES -->
-          </h2>
+
+              <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#mModal_2">
+                  <i class="fas fa-pencil-alt"></i>
+                </button>
+
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#mModal_1">
+                  <i class="far fa-file-alt"></i>
+                </button>
+
+                <a href="pdfFile.html" class="btn btn-outline-primary">
+                  Relatório
+                </a>
+
+                <input type="email" class="form-control " aria-describedby="email_campo" placeholder="email@cartorio.com.br">
+                <button type="button" class="btn btn-outline-primary">Enviar</button>
+              </div>
+            </div>
+          </div>
         </div>
       <!-- END - CARD HEADER -->
 
@@ -531,33 +549,7 @@
     </div>
     <!-- END - ACORDION -->
     <!-- START - TABLE FOOTER -->
-    <div class="p-3"></div>
-    <div class="d-flex justify-content-center align-items-center">
-      <div class="row">
-        <div class="btn-group">
-          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#mModal_2">
-            <i class="fas fa-pencil-alt"></i> Novo atendimento
-          </button>
 
-          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#mModal_1">
-            <i class="far fa-file-alt"></i> Registros
-          </button>
-
-          <a href="pdfFile.html" class="btn btn-outline-primary">
-            Relatório
-          </a>
-        </div>
-
-        &nbsp;
-        <div class="form-input">
-          <input type="email" class="form-control" aria-describedby="email_campo" placeholder="email@cartorio.com.br">
-        </div>
-          &nbsp;
-        <div class="btn-group">
-          <button type="button" class="btn btn-outline-primary">Enviar</button>
-        </div>
-      </div>
-    </div>
     <!-- END - TABLE FOOTER -->
   </body>
   <!-- END-CONTEUDO -->
@@ -643,9 +635,9 @@
 
                 <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                   <div class="row text-margin-adjust">
-                    <div class="btn btn-group">
+                    <div class="btn btn-group" style="padding: 0;">
                       <button class="btn btn-outline-primary text-margin-adjust"><i class="fas fa-plus"></i></button>
-                    </div>    
+                    </div>
 
                     <div class="fileUpload btn btn-outline-primary">
                       <i class="fas fa-paperclip"></i>
@@ -686,33 +678,97 @@
             </div>
             <!-- END - CARD EXEMPLO 1 -->
             <div class="p-2"></div>
-            <!-- START - CARD EXEMPLO 2 -->
+            <!-- START - CARD EXEMPLO 1 -->
             <div class="card">
               <div class="card-header d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                 <h5 class="text-margin-adjust" >Salvador - 1</h5>
-                <p class="text-margin-adjust"><strong>Protocolo:</strong> 0002020919</p>
+                <p class="text-margin-adjust"><strong>Protocolo:</strong> 0001020919</p>
                 <p class="text-margin-adjust text-info">Atendente: xxxxxxx</p>
               </div>
               <div class="card-body" style="width: 100%;">
                 <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                   <h5 class="card-title text-margin-adjust">Título do atendimento</h5>
-                  <p class="text-margin-adjust text-success"><strong>Concluído</strong></p>
                 </div>
                 <div class="p-2"></div>
 
-                <p class="card-text">Lorem Ypsum, sittir amen, bomb, atack</p>
+                <div class="container border rounded">
+                  <div class="row">
+                    <p class="font-weight-bold text-center col">Atendente: xxxxxxxxx</p>
+                    <p class="text-muted text-center col">10/09/2019 16:20</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-dark text-center col"> ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.</p>
+                  </div>
+
+
+                  <div class="row">
+                    <p class="font-weight-bold text-center col">Atendente: xxxxxxxxx</p>
+                    <p class="text-muted text-center col">10/09/2019 16:20</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-dark text-center col"> ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.</p>
+                  </div>
+
+
+                  <div class="row">
+                    <p class="font-weight-bold text-center col">Atendente: xxxxxxxxx</p>
+                    <p class="text-muted text-center col">10/09/2019 16:20</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-dark text-center col"> ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+
+                <div class="p-1"></div>
 
                 <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
-                  <select class="custom-select text-margin-adjust" readonly>
-                    <option selected>Status...</option>
-                    <option value="1">Concluído</option>
-                    <option value="2">Pendente</option>
-                    <option value="3">Chamado TI</option>
-                    <option value="4">Re-aberto</option>
+                  <div class="row text-margin-adjust">
+                    <div class="btn btn-group" style="padding: 0;">
+                      <button class="btn btn-outline-primary text-margin-adjust"><i class="fas fa-plus"></i></button>
+                    </div>
+
+                    <div class="fileUpload btn btn-outline-primary">
+                      <i class="fas fa-paperclip"></i>
+                      <input type="file" class="upload" />
+                    </div>
+
+                    &nbsp;
+                    <!--<button class="btn btn-outline-primary text-margin-adjust"><i class="fas fa-paperclip"></i></button>-->
+                  </div>
+                  <p id="status" class="text-margin-adjust"><strong>Pendente</strong></p>
+                </div>
+
+                <div class="p-1"></div>
+
+                <div class="group">
+                  <textarea rows="5" type="textarea" class="form-control" placeholder="Comentário"></textarea>
+                </div>
+
+                <div class="p-1"></div>
+
+                <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
+                  <select id="selecaoStatus" onchange="selecinarStatus()" class="custom-select text-margin-adjust">
+
+                    <option value="Concluído">Concluído</option>
+                    <option value="Pendente">Pendente</option>
+                    <option value="Chamado TI">Chamado TI</option>
+                    <option value="Reaberto">Reaberto</option>
                   </select>
                    &nbsp; &nbsp;
 
-                  <button class="btn btn-outline-primary text-margin-adjust" readonly>Salvar</button>
+                  <button class="btn btn-outline-primary text-margin-adjust">Salvar</button>
                 </div>
 
               </div>
@@ -720,35 +776,99 @@
                 Data do atendimento: 15/06/2019 - 12:49
               </div>
             </div>
-            <!-- END - CARD EXEMPLO 2 -->
+            <!-- END - CARD EXEMPLO 1 -->
             <div class="p-2"></div>
-            <!-- START - CARD EXEMPLO 3 -->
+            <!-- START - CARD EXEMPLO 1 -->
             <div class="card">
               <div class="card-header d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                 <h5 class="text-margin-adjust" >Salvador - 1</h5>
-                <p class="text-margin-adjust"><strong>Protocolo:</strong> 0003020919</p>
+                <p class="text-margin-adjust"><strong>Protocolo:</strong> 0001020919</p>
                 <p class="text-margin-adjust text-info">Atendente: xxxxxxx</p>
               </div>
               <div class="card-body" style="width: 100%;">
                 <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                   <h5 class="card-title text-margin-adjust">Título do atendimento</h5>
-                  <p class="text-margin-adjust text-info"><strong>Chamado TI</strong></p>
                 </div>
                 <div class="p-2"></div>
 
-                <p class="card-text">Lorem Ypsum, sittir amen, bomb, atack</p>
+                <div class="container border rounded">
+                  <div class="row">
+                    <p class="font-weight-bold text-center col">Atendente: xxxxxxxxx</p>
+                    <p class="text-muted text-center col">10/09/2019 16:20</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-dark text-center col"> ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.</p>
+                  </div>
+
+
+                  <div class="row">
+                    <p class="font-weight-bold text-center col">Atendente: xxxxxxxxx</p>
+                    <p class="text-muted text-center col">10/09/2019 16:20</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-dark text-center col"> ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.</p>
+                  </div>
+
+
+                  <div class="row">
+                    <p class="font-weight-bold text-center col">Atendente: xxxxxxxxx</p>
+                    <p class="text-muted text-center col">10/09/2019 16:20</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-dark text-center col"> ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+
+                <div class="p-1"></div>
 
                 <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
-                  <select class="custom-select text-margin-adjust" readonly>
-                    <option selected>Status...</option>
-                    <option value="1">Concluído</option>
-                    <option value="2">Pendente</option>
-                    <option value="3">Chamado TI</option>
-                    <option value="4">Re-aberto</option>
+                  <div class="row text-margin-adjust">
+                    <div class="btn btn-group" style="padding: 0;">
+                      <button class="btn btn-outline-primary text-margin-adjust"><i class="fas fa-plus"></i></button>
+                    </div>
+
+                    <div class="fileUpload btn btn-outline-primary">
+                      <i class="fas fa-paperclip"></i>
+                      <input type="file" class="upload" />
+                    </div>
+
+                    &nbsp;
+                    <!--<button class="btn btn-outline-primary text-margin-adjust"><i class="fas fa-paperclip"></i></button>-->
+                  </div>
+                  <p id="status" class="text-margin-adjust"><strong>Pendente</strong></p>
+                </div>
+
+                <div class="p-1"></div>
+
+                <div class="group">
+                  <textarea rows="5" type="textarea" class="form-control" placeholder="Comentário"></textarea>
+                </div>
+
+                <div class="p-1"></div>
+
+                <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
+                  <select id="selecaoStatus" onchange="selecinarStatus()" class="custom-select text-margin-adjust">
+
+                    <option value="Concluído">Concluído</option>
+                    <option value="Pendente">Pendente</option>
+                    <option value="Chamado TI">Chamado TI</option>
+                    <option value="Reaberto">Reaberto</option>
                   </select>
                    &nbsp; &nbsp;
 
-                  <button class="btn btn-outline-primary text-margin-adjust" readonly>Salvar</button>
+                  <button class="btn btn-outline-primary text-margin-adjust">Salvar</button>
                 </div>
 
               </div>
@@ -756,35 +876,99 @@
                 Data do atendimento: 15/06/2019 - 12:49
               </div>
             </div>
-            <!-- END - CARD EXEMPLO 3 -->
+            <!-- END - CARD EXEMPLO 1 -->
             <div class="p-2"></div>
-            <!-- START - CARD EXEMPLO 4 -->
+            <!-- START - CARD EXEMPLO 1 -->
             <div class="card">
               <div class="card-header d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                 <h5 class="text-margin-adjust" >Salvador - 1</h5>
-                <p class="text-margin-adjust"><strong>Protocolo:</strong> 0004020919</p>
+                <p class="text-margin-adjust"><strong>Protocolo:</strong> 0001020919</p>
                 <p class="text-margin-adjust text-info">Atendente: xxxxxxx</p>
               </div>
               <div class="card-body" style="width: 100%;">
                 <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                   <h5 class="card-title text-margin-adjust">Título do atendimento</h5>
-                  <p class="text-margin-adjust text-warning"><strong>Re-aberto</strong></p>
                 </div>
                 <div class="p-2"></div>
 
-                <p class="card-text">Lorem Ypsum, sittir amen, bomb, atack</p>
+                <div class="container border rounded">
+                  <div class="row">
+                    <p class="font-weight-bold text-center col">Atendente: xxxxxxxxx</p>
+                    <p class="text-muted text-center col">10/09/2019 16:20</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-dark text-center col"> ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.</p>
+                  </div>
+
+
+                  <div class="row">
+                    <p class="font-weight-bold text-center col">Atendente: xxxxxxxxx</p>
+                    <p class="text-muted text-center col">10/09/2019 16:20</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-dark text-center col"> ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.</p>
+                  </div>
+
+
+                  <div class="row">
+                    <p class="font-weight-bold text-center col">Atendente: xxxxxxxxx</p>
+                    <p class="text-muted text-center col">10/09/2019 16:20</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-dark text-center col"> ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+
+                <div class="p-1"></div>
 
                 <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
-                  <select class="custom-select text-margin-adjust" readonly>
-                    <option selected>Status...</option>
-                    <option value="1">Concluído</option>
-                    <option value="2">Pendente</option>
-                    <option value="3">Chamado TI</option>
-                    <option value="4">Re-aberto</option>
+                  <div class="row text-margin-adjust">
+                    <div class="btn btn-group" style="padding: 0;">
+                      <button class="btn btn-outline-primary text-margin-adjust"><i class="fas fa-plus"></i></button>
+                    </div>
+
+                    <div class="fileUpload btn btn-outline-primary">
+                      <i class="fas fa-paperclip"></i>
+                      <input type="file" class="upload" />
+                    </div>
+
+                    &nbsp;
+                    <!--<button class="btn btn-outline-primary text-margin-adjust"><i class="fas fa-paperclip"></i></button>-->
+                  </div>
+                  <p id="status" class="text-margin-adjust"><strong>Pendente</strong></p>
+                </div>
+
+                <div class="p-1"></div>
+
+                <div class="group">
+                  <textarea rows="5" type="textarea" class="form-control" placeholder="Comentário"></textarea>
+                </div>
+
+                <div class="p-1"></div>
+
+                <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
+                  <select id="selecaoStatus" onchange="selecinarStatus()" class="custom-select text-margin-adjust">
+
+                    <option value="Concluído">Concluído</option>
+                    <option value="Pendente">Pendente</option>
+                    <option value="Chamado TI">Chamado TI</option>
+                    <option value="Reaberto">Reaberto</option>
                   </select>
                    &nbsp; &nbsp;
 
-                  <button class="btn btn-outline-primary text-margin-adjust" readonly>Salvar</button>
+                  <button class="btn btn-outline-primary text-margin-adjust">Salvar</button>
                 </div>
 
               </div>
@@ -792,7 +976,7 @@
                 Data do atendimento: 15/06/2019 - 12:49
               </div>
             </div>
-            <!-- END - CARD EXEMPLO 4 -->
+            <!-- END - CARD EXEMPLO 1 -->
           </div>
           <!-- END - MODAL BODY -->
           <nav>
@@ -843,13 +1027,14 @@
 
                   <div>
                     <p><strong>Remessas selecionadas</strong></p>
-                    <div class="row">
-                      <p class="text-secondary text-center">B9001408.192, B9001408.192, B9001408.192, B9001408.192, B9001408.192</p>
+                    <div class="row mx-auto">
+                      <p class="text-secondary text-left">B9001408.192, B9001408.192, B9001408.192, B9001408.192, B9001408.192, B9001408.192,
+                      B9001408.192</p>
                     </div>
 
                     <p><strong>Protocolos selecionadas</strong></p>
-                    <div class="row">
-                      <p class="text-secondary text-center">0000231233, 0000231233, 0000231233, 0000231233, 0000231233, 0000231233,
+                    <div class="row mx-auto">
+                      <p class="text-secondary text-left">0000231233, 0000231233, 0000231233, 0000231233, 0000231233, 0000231233,
                       0000231233, 0000231233, 0000231233</p>
 
                     </div>
