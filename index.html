@@ -13,11 +13,11 @@
     <div id="container" class="container-fluid">
       <!-- START - LOGO -->
       <div class="p-2"></div>
-      <div class="logo row mx-auto col-12 justify-content-center">
-        <div class="">
+      <div class="logo mx-auto d-flex justify-content-around align-items-center">
+        <div class="col-5">
           <img  width="200px" src="./img/logo.jpg"/>
         </div>
-        <div class="">
+        <div class="col-7">
           <h3>Relatório de pendências geral</h3>
         </div>
       </div>
@@ -25,7 +25,7 @@
 
       <!-- START - PESQUISA -->
       <div class="p-2"></div>
-      <form class="col-6">
+      <form class="mx-auto">
 
         <div class="form-row justify-content-center align-items-center">
           <div class="col input-group">
@@ -76,47 +76,49 @@
       <div class="tab accordion" id="accordion">
         <!-- START - CARD HEADER -->
         <div class="card-header" id="headingOne">
-          <div class="d-flex">
-            <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
-              data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              Comarca de Salvador <span class="badge badge-danger">12</span>
-            </button>
-            <!-- START - NOTIFICAÇÕES -->
-            <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
-              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Confirmações <span class="badge badge-danger">4</span>
-            </button>
+          <div class="d-flex justify-content-around align-items-center">
+            <div>
+              <!-- START - NOTIFICAÇÕES -->
+              <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Comarca de Salvador <span class="badge badge-danger">12</span>
+              </button>
 
-            <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
-              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Retornos <span class="badge badge-danger">4</span>
-            </button>
+              <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
+                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Confirmações <span class="badge badge-danger">4</span>
+              </button>
 
-            <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
-              data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              DAJE's <span class="badge badge-danger">4</span>
-            </button>
-            <!-- END - NOTIFICAÇÕES -->
+              <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
+                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Retornos <span class="badge badge-danger">4</span>
+              </button>
 
-              <div class="btn-group">
-                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#mModal_2">
-                  <i class="fas fa-pencil-alt"></i>
-                </button>
+              <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
+                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                DAJE's <span class="badge badge-danger">4</span>
+              </button>
+              <!-- END - NOTIFICAÇÕES -->
+            </div>
 
-                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#mModal_1">
-                  <i class="far fa-file-alt"></i>
-                </button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#mModal_2">
+                <i class="fas fa-pencil-alt"></i>
+              </button>
 
-                <a href="pdfFile.html" class="btn btn-outline-primary">
-                  Relatório
-                </a>
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#mModal_1">
+                <i class="far fa-file-alt"></i>
+              </button>
 
-                <input type="email" class="form-control " aria-describedby="email_campo" placeholder="email@cartorio.com.br">
-                <button type="button" class="btn btn-outline-primary">Enviar</button>
-              </div>
+              <a href="pdfFile.html" class="btn btn-outline-primary">
+                Relatório
+              </a>
+
+              <input type="email" class="form-control " aria-describedby="email_campo" placeholder="email@cartorio.com.br">
+              <button type="button" class="btn btn-outline-primary">Enviar</button>
             </div>
           </div>
-
+      </div>
       <!-- END - CARD HEADER -->
 
       <!-- START - CARD CONTENT -->
