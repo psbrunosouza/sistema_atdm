@@ -673,6 +673,10 @@
     </div>
 
     <!-- MODAL CADASTROS DE ATENDIMENTO -->
+    <?php
+         include("dao.php");
+    ?>
+
     <div class="modal fade" id="mModal_2" tabindex="-1" role="dialog" aria-labelledby="modalRegistro" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <!-- START - MODAL CONTEUDO -->
@@ -687,14 +691,6 @@
           <div class="modal-body mx-auto">
             <!-- START - CARD EXEMPLO 1 -->
 
-            <?php
-               $protocoloAtdm = null;
-               $descricaoAtdm = "";
-               $dataAtdm = "";
-               $nomeUsr = 1;
-            ?>
-
-
             <div class="card">
               <div class="card-header d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                 <h5 class="text-margin-adjust" >Salvador - 1</h5>
@@ -703,13 +699,9 @@
               <div class="card-body" style="width: 100%;">
 
                 <div class="p-1"></div>
-
-                <textarea rows="5" class="form-control" placeholder="Registrar atendimento..."></textarea>
-
-              </div>
-
-              <div class="card-footer text-muted text-right" style="width: 100%;">
-                Data do atendimento: 15/06/2019 - 12:49
+                <form action="dao.php" method="post">
+                   <textarea name="descAtdm" rows="5" class="form-control" placeholder="Registrar atendimento..."></textarea>
+                </form>
               </div>
             </div>
 
@@ -720,13 +712,11 @@
           <!-- START - MODAL FOOTER -->
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary">Salvar</button>
+            <form action="dao.php" method="POST">
+               <button name="btnSalvar" type="submit" class="btn btn-primary">Salvar</button>
+            </form>
           </div>
           <!-- END - MODAL FOOTER -->
-          <?php
-             $insertSql = "INSERT INTO atendimento VALUES ($protocoloAtdm, $descricaoAtdm,
-                $dataAtdm, "Pendente", $nomeUsr);";
-          ?>
         </div>
         <!-- END - MODAL CONTEUDO -->
 
