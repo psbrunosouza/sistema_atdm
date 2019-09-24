@@ -1,7 +1,7 @@
 <?php
 class{
    $id;
-   $usrNome;
+   $nome;
 
    function getId(){
       return $id;
