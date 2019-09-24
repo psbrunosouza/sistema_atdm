@@ -601,7 +601,7 @@
                     <p class="text-muted text-center col"><?=$d_atdm["atdmData"]?></p>
                   </div>
                   <div class="row">
-                    <p class="text-dark text-center col"> <?=$d_atdm["atdmDescricao"]?></p>
+                    <p class="text-dark text-left col"> <?=$d_atdm["atdmDescricao"]?></p>
                   </div>
                 </div>
 
@@ -624,12 +624,6 @@
 
                 <div class="p-1"></div>
 
-                <div class="group">
-                  <textarea rows="5" type="textarea" class="form-control" placeholder="Comentário"></textarea>
-                </div>
-
-                <div class="p-1"></div>
-
                 <div class="d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                   <select id="selecaoStatus" onchange="selecinarStatus()" class="custom-select text-margin-adjust">
 
@@ -645,12 +639,12 @@
 
               </div>
               <div class="card-footer text-muted text-right" style="width: 100%;">
-                 <?=$d_atdm["atdmData"]?>
+                 Data: <?=$d_atdm["atdmData"]?>
               </div>
             </div>
+            <div class="p-2"></div>
             <?php }?>
             <!-- END - CARD EXEMPLO 1 -->
-            <div class="p-2"></div>
 
           </div>
           <!-- END - MODAL BODY -->

@@ -1,6 +1,6 @@
 <?php
 
-   $database = "db_atendimento";
+   $database = "dbatdm";
    $user = "root";
    $password = "";
    $host = "localhost";
