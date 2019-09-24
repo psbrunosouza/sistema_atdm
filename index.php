@@ -646,6 +646,7 @@
             <?php }?>
             <!-- END - CARD EXEMPLO 1 -->
 
+
           </div>
           <!-- END - MODAL BODY -->
           <nav>
@@ -685,6 +686,15 @@
           <!-- START - MODAL BODY -->
           <div class="modal-body mx-auto">
             <!-- START - CARD EXEMPLO 1 -->
+
+            <?php
+               $protocoloAtdm = null;
+               $descricaoAtdm = "";
+               $dataAtdm = "";
+               $nomeUsr = 1;
+            ?>
+
+
             <div class="card">
               <div class="card-header d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
                 <h5 class="text-margin-adjust" >Salvador - 1</h5>
@@ -702,6 +712,7 @@
                 Data do atendimento: 15/06/2019 - 12:49
               </div>
             </div>
+
             <!-- END - CARD EXEMPLO 1 -->
           </div>
           <!-- END - MODAL BODY -->
@@ -712,6 +723,10 @@
             <button type="button" class="btn btn-primary">Salvar</button>
           </div>
           <!-- END - MODAL FOOTER -->
+          <?php
+             $insertSql = "INSERT INTO atendimento VALUES ($protocoloAtdm, $descricaoAtdm,
+                $dataAtdm, "Pendente", $nomeUsr);";
+          ?>
         </div>
         <!-- END - MODAL CONTEUDO -->
 
