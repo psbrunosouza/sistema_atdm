@@ -673,10 +673,6 @@
     </div>
 
     <!-- MODAL CADASTROS DE ATENDIMENTO -->
-    <?php
-         include("dao.php");
-    ?>
-
     <div class="modal fade" id="mModal_2" tabindex="-1" role="dialog" aria-labelledby="modalRegistro" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <!-- START - MODAL CONTEUDO -->
@@ -701,6 +697,7 @@
                 <div class="p-1"></div>
                 <form action="dao.php" method="post">
                    <textarea name="descAtdm" rows="5" class="form-control" placeholder="Registrar atendimento..."></textarea>
+                   <button name="btnSalvar" type="submit" class="btn btn-primary">Salvar</button>
                 </form>
               </div>
             </div>
@@ -712,9 +709,6 @@
           <!-- START - MODAL FOOTER -->
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <form action="dao.php" method="POST">
-               <button name="btnSalvar" type="submit" class="btn btn-primary">Salvar</button>
-            </form>
           </div>
           <!-- END - MODAL FOOTER -->
         </div>
