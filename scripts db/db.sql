@@ -25,3 +25,6 @@ insert into usuario values (null, "Alex");
 
 SELECT u.nome, a.protocolo, a.descricao, a.dataAtdm, a.statusAtdm FROM usuario as u
                         INNER JOIN atendimento as a on a.idUsuario = u.idUsuario ;
+                        
+ALTER TABLE CARTORIO
+
