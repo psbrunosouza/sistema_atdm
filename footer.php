@@ -30,20 +30,20 @@
              foreach($dados_atendimento as $d_atdm){ ?>
           <div class="card">
             <div class="card-header d-flex justify-content-between text-margin-adjust align-items-center" style="width: 100%;">
-             <h5 class="text-margin-adjust" ><?=$d_atdm["cartorio"]?></h5>
-             <p class="text-margin-adjust"><strong>Protocolo:</strong> <?=$d_atdm["atdmProtocolo"]?></p>
-             <p class="text-margin-adjust text-info">Atendente: <?=$d_atdm["usuarioNome"]?></p>
+             <h5 class="text-margin-adjust" ><?=$d_atdm["Cartorio"]?></h5>
+             <p class="text-margin-adjust"><strong>Protocolo:</strong> <?=$d_atdm["Protocolo"]?></p>
+             <p class="text-margin-adjust text-info">Atendente: <?=$d_atdm["Usuario"]?></p>
             </div>
             <div class="card-body" style="width: 100%;">
              <div class="p-2"></div>
 
              <div class="container border rounded">
                 <div class="row">
-                  <p class="font-weight-bold text-center col">Atendente: <?=$d_atdm["usuarioNome"]?></p>
-                  <p class="text-muted text-center col"><?=$d_atdm["atdmData"]?></p>
+                  <p class="font-weight-bold text-center col">Atendente: <?=$d_atdm["Usuario"]?></p>
+                  <p class="text-muted text-center col"><?=$d_atdm["Data atendimento"]?></p>
                 </div>
                 <div class="row">
-                  <p class="text-dark text-left col"> <?=$d_atdm["atdmDescricao"]?></p>
+                  <p class="text-dark text-left col"> <?=$d_atdm["Descricao"]?></p>
                 </div>
              </div>
 
@@ -61,7 +61,7 @@
                   </div>
                   &nbsp;
                 </div>
-                <p id="status" class="text-margin-adjust"><strong><?=$d_atdm["atdmStatus"]?></strong></p>
+                <p id="status" class="text-margin-adjust"><strong><?=$d_atdm["Status"]?></strong></p>
              </div>
 
              <div class="p-1"></div>
@@ -81,7 +81,7 @@
 
             </div>
             <div class="card-footer text-muted text-right" style="width: 100%;">
-               Data: <?=$d_atdm["atdmData"]?>
+               Data: <?=$d_atdm["Data atendimento"]?>
             </div>
           </div>
           <div class="p-2"></div>

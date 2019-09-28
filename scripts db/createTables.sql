@@ -1,16 +1,17 @@
 CREATE DATABASE dbAtdm;
 USE dbAtdm;
 
-CREATE TABLE atdm(
+CREATE TABLE atendimento(
 	codAtdm int not null auto_increment,
     descAtdm text not null,
     dataAtdm datetime not null,
     codStatus int not null,
-    codUsuario int not null,
-    codPerfil int not null,
+    codCra int not null,
+    codCra int not null,
     primary key(codAtdm),
     foreign key(codStatus) references statusAtdm(codStatus),
-    foreign key(codPerfil) references perfil(codPerfil)
+    foreign key(codCra) references cra(codCra),
+    foreign key(codStatus) references statusAtdm(codStatus)
 );
 
 CREATE TABLE statusAtdm(
@@ -19,11 +20,22 @@ CREATE TABLE statusAtdm(
     primary key(codStatus)
 );
 
-CREATE TABLE perfil(
-	codPerfil int not null auto_increment,
-	tipoPerfil enum("C", "I", "A") not null,
+CREATE TABLE cra(
+	codCra int not null auto_increment,
     nomePerfil varchar(30),
-	primary key(codPerfil)
+	primary key(codCra)
+);
+
+CREATE TABLE cartorio(
+	codCartorio int not null auto_increment,
+    nomePerfil varchar(30),
+	primary key(codCartorio)
+);
+
+CREATE TABLE apresentante(
+	codApresentante int not null auto_increment,
+    nomePerfil varchar(30),
+	primary key(codApresentante)
 );
 
 CREATE TABLE confirmacao(
@@ -31,7 +43,13 @@ CREATE TABLE confirmacao(
     arquivo varchar(30) not null,
     dataArquivo date not null,
     ibgeNum varchar(30) not null,
-    primary key(codConfirmacao)
+    primary key(codConfirmacao),
+    codCra int not null,
+    codCartorio int not null,
+    codApresentante int not null,
+    foreign key(codCra) references cra(codCra),
+    foreign key(codCartorio) references cartorio(codCartorio),
+    foreign key(codApresentante) references apresentante(codApresentante)
 );
 
 CREATE TABLE retorno(
@@ -40,7 +58,13 @@ CREATE TABLE retorno(
     contaContrato varchar(30) not null,
     arqProtocolo varchar(30) not null,
     dataProtocolo date not null,
-    primary key(codRetorno)
+    primary key(codRetorno),
+    codCra int not null,
+    codCartorio int not null,
+    codApresentante int not null,
+    foreign key(codCra) references cra(codCra),
+    foreign key(codCartorio) references cartorio(codCartorio),
+    foreign key(codApresentante) references apresentante(codApresentante)
 );
 
 CREATE TABLE daje(
@@ -51,15 +75,34 @@ CREATE TABLE daje(
     dataProtocolo date not null,
     documentoDevedor varchar(30) not null,
     valorTitulo int,
-    primary key(codDaje)
+    primary key(codDaje),
+    codCra int not null,
+    codCartorio int not null,
+    codApresentante int not null,
+    foreign key(codCra) references cra(codCra),
+    foreign key(codCartorio) references cartorio(codCartorio),
+    foreign key(codApresentante) references apresentante(codApresentante)
 );
 
-CREATE TABLE daje_conf_ret(
-	codUsuario int not null,
+CREATE TABLE usrTemDaje(
+	codPerfil int not null,
     codDaje  int not null,
-    codConfirmacao int not null,
-    codRetorno int not null,
-    primary key(codUsuario, codDaje, codConfirmacao, codRetorno)
+    primary key(codPerfil, codDaje)
 );
+
+CREATE TABLE usrTemConfirmacao(
+	codPerfil int not null,
+    codConfirmacao int not null,
+    primary key(codPerfil, codConfirmacao)
+);
+
+CREATE TABLE usrTemRetorno(
+	codPerfil int not null,
+    codRetorno int not null,
+    primary key(codPerfil, codRetorno)
+);
+
+
+
 
 
