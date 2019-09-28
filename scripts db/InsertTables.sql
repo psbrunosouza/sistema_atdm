@@ -13,4 +13,5 @@ select * from retorno;
 INSERT INTO daje values(null, "CP900506.192", "2019-05-15", "11111111111", "2019-05-15", "111123456789", 450);
 select * from daje;
 
-
+INSERT INTO daje_conf_ret values(1, 1, 1, 1);
+select * from daje_conf_ret;
